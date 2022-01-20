@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+input,
+select,
+button {
+	border: none;
+	outline: none;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	background: none;
+}

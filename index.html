@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | E-commerce product page</title>
+
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav class="nav" id="nav">
+				<a href="#" class="nav__menu-icon">
+					<img src="images/icon-menu.svg" alt="menu" />
+				</a>
+				<a href="#" class="nav__title">
+					<img src="images/logo.svg" alt="sneakers" />
+				</a>
+				<ul class="nav__categories">
+					<li>
+						<a href="#" class="nav__category">Collections</a>
+					</li>
+					<li><a href="#" class="nav__category">Men</a></li>
+					<li><a href="#" class="nav__category">Women</a></li>
+					<li><a href="#" class="nav__category">About</a></li>
+					<li><a href="#" class="nav__category">Contact</a></li>
+				</ul>
+				<a href="#" class="nav__cart" id="cart">
+					<img src="images/icon-cart.svg" alt="cart" />
+					<span class="nav__cart-number">0</span>
+				</a>
+				<a href="#" class="nav__user">
+					<img src="images/image-avatar.png" alt="user" />
+				</a>
+				<div class="nav__cart-window" id="cart-window">
+					<h5 class="nav__cart-window-title">Cart</h5>
+					<div class="nav__cart-body">
+                        <h3 class="nav__cart-item-empty-text">Your cart is empty.</h3>
+						<ul class="nav__cart-items">
+							<li class="nav__cart-item">
+								<div class="nav__cart-item-img">
+									<img
+										src="images/image-product-1-thumbnail.jpg"
+										alt="product-1 thumbnail"
+									/>
+								</div>
+								<div class="nav__cart-item-info">
+
+									<h5 class="nav__cart-item-name">
+										fall limited edition sneakers
+									</h5>
+									<div class="nav__cart-item-amount">
+										<span class="nav__cart-item-price"
+											>$125.00</span
+										>
+										<p class="nav__cart-item-qty" id="cart-product-qty"
+											>x<span class="nav__cart-item-qty-number">0</span></p
+										>
+										<span class="nav__cart-total-price"
+											>$375</span
+										>
+									</div>
+								</div>
+								<button type="button" id="cart-delete-btn">
+									<img
+										src="images/icon-delete.svg"
+										alt="delete"
+									/>
+								</button>
+							</li>
+						</ul>
+						<button type="button" class="btn btn-checkout">
+							Checkout
+						</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<main>
+			<section class="section">
+				<!-- hero section carousel -->
+
+				<div class="container">
+					<div class="product__details">
+						<div class="hero">
+							<div class="hero__main-img">
+								<img
+									src="images/image-product-1.jpg"
+									alt="product-1"
+								/>
+								<button type="button" class="hero__slide-btn hero__prev-btn">
+									<img
+										src="images/icon-previous.svg"
+										alt="prev"
+									/>
+								</button>
+								<button type="button" class="hero__slide-btn hero__next-btn">
+									<img
+										src="images/icon-next.svg"
+										alt="next"
+									/>
+								</button>
+							</div>
+
+							<ul class="hero__gallery">
+								<li>
+									<a
+										href="#"
+										class="hero__gallery-img selected"
+									>
+										<img
+											src="/images/image-product-1-thumbnail.jpg"
+											alt="gallery-1"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hero__gallery-img">
+										<img
+											src="/images/image-product-2-thumbnail.jpg"
+											alt="gallery-2"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hero__gallery-img">
+										<img
+											src="/images/image-product-3-thumbnail.jpg"
+											alt="gallery-3"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hero__gallery-img">
+										<img
+											src="/images/image-product-4-thumbnail.jpg"
+											alt="gallery-4"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product__info">
+							<div>
+								<h4 class="product__name">SNEAKER COMPANY</h4>
+								<h1 class="product__title">
+									fall limited edition <br />
+									sneakers
+								</h1>
+								<p class="product__description">
+									These low-profile sneakers are your perfect
+									casual wear companion. Featuring a durable
+									rubber outer sole, they'll withstand
+									everything the weather can offer
+								</p>
+								<div class="product__price-wrapper">
+									<strong class="product__price"
+										>$125.00
+									</strong>
+									<p class="product__discount-percent">50%</p>
+									<strong class="product__discount-price">
+										$250.00
+									</strong>
+								</div>
+								<div class="product__qty-wrapper">
+									<div class="product__qty-btn-wrapper">
+										<button
+											type="button"
+											class="product__qty-btn"
+											id="qty-minus"
+										>
+											<img
+												src="/images/icon-minus.svg"
+												alt="minus btn"
+											/>
+										</button>
+										<span class="product__qty">0</span>
+										<button
+											type="button"
+											class="product__qty-btn"
+											id="qty-add"
+										>
+											<img
+												src="images/icon-plus.svg"
+												alt="plus-btn"
+											/>
+										</button>
+									</div>
+									<button type="button" class="btn btn-cart" id="add-to-cart">
+										<img
+											src="images/icon-cart.svg"
+											alt="cart"
+										/>
+										Add to cart
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="overlay overlay-sidebar">
+			<nav class="sidebar" id="sidebar">
+				<button type="button" class="sidebar__close-btn">
+                    <img src="images/icon-close.svg" alt="close btn" />
+                </button>
+					
+				</button>
+				<ul class="sidebar__nav nav__categories">
+					<li>
+						<a href="#" class="nav__category">Collections</a>
+					</li>
+					<li>
+						<a href="#" class="nav__category">Men</a>
+					</li>
+					<li>
+						<a href="#" class="nav__category">Women</a>
+					</li>
+					<li>
+						<a href="#" class="nav__category">About</a>
+					</li>
+					<li>
+						<a href="#" class="nav__category">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+        <!-- carousel on overlay -->
+        <div class="overlay overlay__carousel">
+            <div class="overlay__content">
+                <div>
+                    <button type="button" class="overlay__close-btn"><img src="images/icon-close.svg" alt="close-btn"></button>
+                    <div class="hero">
+                        <div class="hero__main-img">
+                            <img
+                                src="images/image-product-1.jpg"
+                                alt="product-1"
+                                id="overlay-main-img"
+                            />
+                            <button type="button" class="hero__slide-btn hero__prev-btn" id="overlay-prev">
+                                <img
+                                    src="images/icon-previous.svg"
+                                    alt="prev"
+                                />
+                            </button>
+                            <button type="button" class="hero__slide-btn hero__next-btn" id="overlay-next">
+                                <img
+                                    src="images/icon-next.svg"
+                                    alt="next"
+                                />
+                            </button>
+                        </div>
+                    
+                        <ul class="hero__gallery">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hero__gallery-img selected"
+                                >
+                                    <img
+                                        src="/images/image-product-1-thumbnail.jpg"
+                                        alt="gallery-1"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hero__gallery-img">
+                                    <img
+                                        src="/images/image-product-2-thumbnail.jpg"
+                                        alt="gallery-2"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hero__gallery-img">
+                                    <img
+                                        src="/images/image-product-3-thumbnail.jpg"
+                                        alt="gallery-3"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hero__gallery-img">
+                                    <img
+                                        src="/images/image-product-4-thumbnail.jpg"
+                                        alt="gallery-4"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
